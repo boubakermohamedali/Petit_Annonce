@@ -1,0 +1,512 @@
+/* CSS REGROUPANT LES PAGES (ROMAN FRANCAIS, ROMAN ETRANGER, BIOGRAPHIE, DOCUMENTAIRE, PALM2017) */
+
+/* Jaquette */
+.oeuvre{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom : 100px;
+    flex-wrap: wrap;
+}
+
+.oeuvre img{
+    width: 290px;
+}
+
+.oeuvre img:hover{
+  cursor: pointer;
+}
+
+
+/* Avis Oeuvre */
+.stars-outer {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .stars-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+  }
+  
+  .stars-outer::before {
+    content: "\f005 \f005 \f005 \f005 \f005 \f005 \f005 \f005 \f005 \f005";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 40px;
+    color: #ccc;
+  }
+  
+  .stars-inner::before {
+    content: "\f005 \f005 \f005 \f005 \f005 \f005 \f005 \f005 \f005 \f005";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 40px;
+    color: #BFA959;
+  }
+
+.principal{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+    margin-top:100px;
+    flex-wrap: wrap;
+}
+
+.sco{
+    display: flex;
+    flex-direction: column;
+}
+
+/* DISPLAY USING JAVASCRIPT */
+.score{
+  display: none;
+}
+
+.nota{
+	display: flex;
+  align-items: center;
+ 
+}
+
+span{
+	font-size:30px;
+	margin-left: 30px;
+}
+
+.nota h1{
+	margin-right: 50px;
+}
+
+/* Boutons */
+
+.example_a{
+  color: #fff !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #BFA959;
+  padding: 10px 25px;
+  border-radius: 5px;
+  display: inline-block;
+  border: none;
+  transition: all 0.4s ease 0s;
+  text-decoration: none;
+  }
+
+  .example_b{
+  color: #fff !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #BFA959;
+  padding: 10px 25px;
+  border-radius: 5px;
+  display: inline-block;
+  border: none;
+  transition: all 0.4s ease 0s;
+  text-decoration: none;
+  }
+
+  .example_a:hover {
+    background: #18273d;
+    letter-spacing: 1px;
+    transition: all 0.4s ease 0s;
+    text-decoration: none;
+    }
+
+      .example_b:hover {
+    background: #18273d;
+    letter-spacing: 1px;
+    transition: all 0.4s ease 0s;
+    text-decoration: none;
+    }
+
+/* PALMARES */
+
+
+/* Résumé de l'oeuvre */
+.bio{
+  display: flex;
+}
+
+/* Biographie */
+
+.titre2, .bio{
+  margin-left:200px;
+  margin-right: 200px;
+}
+
+.titre3{
+  margin-left: 100px;
+}
+
+/* USING JAVASCRIPT POUR PALMARES */
+
+.titre3{
+  font-size: 25px;
+  display: none;
+}
+
+.titre2{
+  font-size: 25px;
+  display: none;
+}
+
+.button_cont{
+  display: none;
+}
+
+.button_cont2{
+  display: none;
+  margin-top: 20px;
+}
+
+/* CONTACT PAGE  */
+
+/* Coordonnés */
+.block{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 150px;
+  font-family: garamondbold;
+  flex-wrap: wrap;
+
+}
+
+.case{
+  background-color: #BFA959;
+  padding:40px;
+  margin-right: 40px;
+  margin-left: 40px;
+  border-radius:15px;
+  border : 2px solid #18273d
+}
+
+.case1{
+  padding-left: 35px;
+  padding-right:35px;
+}
+
+.case3{
+  padding-left: 60px;
+  padding-right:60px;
+}
+
+/* Formulaire de contact */
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+  color: #bbb5af;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+  color: #bbb5af;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::placeholder, textarea::focus:placeholder {
+  color: #bbb5af;
+}
+
+input::-ms-placeholder, textarea::-ms-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+  color: #bbb5af;
+}
+
+/* on hover placeholder */
+
+input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #18273d;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
+  color: #18273d;
+}
+
+#form {
+  margin: 50px auto 50px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+input {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  width: 100%;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+  background: transparent;
+  outline: none;
+  color: #726659;
+  border: solid 1px #18273d;
+  border-bottom: none;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+  background:#BFA959;
+  color: #18273d;
+}
+
+textarea {
+  width: 945px;
+  max-width: 945px;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+  background: transparent;
+  outline: none;
+  color: #726659;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  border: solid 1px #18273d;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+  background: #BFA959;
+  color:#18273d;
+}
+
+#submit {
+  width: 100%;
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  color: #b3aca7;
+  outline:none;
+  cursor: pointer;
+  border: solid 1px #18273d;
+  border-top: none;
+}
+
+#submit:hover {
+  color:#18273d;
+}
+
+/* PAGE INSCRIPTION JURY */
+/* FORM ELEMENTS */
+
+.my-form textarea {
+  height: 170px;
+}
+
+.my-form ::placeholder {
+  color: inherit;
+  opacity: 1;
+}
+
+.my-form select:focus,
+.my-form input:focus,
+.my-form textarea:focus {
+  transform: scale(1.02);
+}
+
+.my-form *:required,
+.my-form select {
+  background-repeat: no-repeat;
+  background-position: center right 12px;
+  background-size: 15px 15px;
+}
+
+
+/* CUSTOM CHECKBOX */
+.my-form input[type="checkbox"] {
+  position: absolute;
+  left: -9999px;
+}
+
+.my-form input[type="checkbox"] + label {
+  position: relative;
+  display: inline-block;
+  padding-left: 2rem;
+  transition: background 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
+}
+
+.my-form input[type="checkbox"] + label::before,
+.my-form input[type="checkbox"] + label::after {
+  content: '';
+  position: absolute;
+}
+
+.my-form input[type="checkbox"] + label::before {
+  left: 0;
+  top: 3px;
+  width: 18px;
+  height: 18px;
+  border: 2px solid black;
+}
+
+.my-form input[type="checkbox"]:checked + label::before {
+  background: red;
+}
+
+.my-form input[type="checkbox"]:checked + label::after {
+  left: 7px;
+  top: 3px;
+  width: 6px;
+  height: 14px;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+  transform: rotate(45deg);
+}
+
+.my-form .required-msg {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/asterisk.svg) no-repeat center left / 15px 15px;
+  padding-left: 20px;
+}
+
+.my-form .btn-grid {
+  position: relative;
+  overflow: hidden;
+  transition: filter 0.2s;
+  background-color: #18273d;
+}
+
+.my-form *:disabled {
+  cursor: default;
+  filter: blur(2px);
+}
+
+.my-form *:required {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/asterisk.svg);
+}
+
+.front{
+  color:white;
+}
+
+.form{
+  display: flex;
+  justify-content: center;
+}
+
+.container dl, ol, ul{
+  margin-top: 0;
+  margin-bottom: 0rem;
+  list-style-type: none;
+  display: inline-block;
+}
+
+.container ul li{
+  list-style-type: none;
+    display: inline-block;
+    padding-right: 50px;
+    padding-left: 76px;
+}
+
+/* PAGE INSCRIPTION AUTEUR */
+.livre{
+  font-family: 'Lato', sans-serif;
+    font-size: 0.875em;
+    width: 945px;
+    height: 50px;
+    padding: 0px 15px 0px 15px;
+    background: transparent;
+    outline: none;
+    color: black;
+    border: none;
+    border-bottom: none;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+}
+
+.livre:hover{
+      background: none;
+    color: #18273d;
+}
+
+/* PAGE INSCRIPTION  */
+
+.insc{
+  font-family: 'Lato', sans-serif;
+    font-size: 0.875em;
+    width: 400PX;
+    margin-top:10px;
+    height: 50px;
+    padding: 0px 15px 0px 15px;
+    background: transparent;
+    outline: none;
+    color: #726659;
+    border: none;
+    border-bottom: none;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    border: 2px solid #18273d;
+}
+
+.box{
+ padding-top: 30px;
+}
+
+
+
+
+
+
+
+
+

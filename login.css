@@ -1,0 +1,16 @@
+label b {
+    text-align: center;
+}
+
+
+input {
+    text-align: center;
+    width: 100%;
+}
+#submit{
+    text-align: center;
+    width: 100%;
+}
+h1  b input  #submit:hover { 
+    text-align: center;
+}

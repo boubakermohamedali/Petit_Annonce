@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <titre><h1>petit annonce</h1></titre>
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor' crossorigin='anonymous'>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>Document</title>
+</head>
+<a href='index.php' class='btn btn-secondary m-2 active' role='button'>Accueil</a>
+<a href='categorie.php' class='btn btn-secondary m-2 active' role='button'>Categorie</a>
+<a href='members.php' class='btn btn-secondary m-2 active' role='button'>Membres</a>
+<a href='annonces.php' class='btn btn-secondary m-2 active' role='button'>Annonces</a>
+<a href='utilisateurs.php' class='btn btn-secondary m-2 active' role='button'>Utilisateurs</a>
+<body>
+    <div class="bimage">
+        <div class="text">
+          <h1>Connexion</h1>
+          <form action="/connexion.php" method="post">
+            
+          
+            <div class="container">
+              <label for="uname"><b>Adresse mail</b></label><br>
+              <input type="text" placeholder="" name="uname" required>
+                <br>
+              <label for="psw"><b>Mot de passe</b></label><br>
+              <input type="password" placeholder="" name="psw" required> <br>
+                  
+              <button type="submit">Connexion</button>
+              <label><br>
+                <div>
+                    <input type="checkbox" id="scales" name="scales"
+                           checked>
+                    <label for="scales">Se rappeler de moi </label>
+                  
+              </label> <br>
+                
+              <span class="psw"><a href="#">Mot de passe oublier?</a></span> <br>
+              <!--<span class="psw"><a href="/html/inscrip2.html">Crée un compte</a></span>-->
+            
+            </div>
+            </div>
+          </form>
+        </div>
+      </div>   
+</body>
+</html>

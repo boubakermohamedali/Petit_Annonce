@@ -1,0 +1,10 @@
+# Query: vendor/autoload.php
+# Flags: RegExp
+# ContextLines: 1
+
+1 résultat - 1 fichier
+
+pdf.php:
+  1  <?php require_once 'footer.php'; 
+  2: require __DIR__.'/vendor/autoload.php';
+  3  use Spipu\Html2Pdf\Html2Pdf;

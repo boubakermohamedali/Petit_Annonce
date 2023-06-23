@@ -1,0 +1,66 @@
+
+/*-------------------------------------- Body ------------------------------------------ */
+body{
+    height: 100%;
+    /*background:linear-gradient(#9198e5,#eeeaf1 ) no-repeat center center fixed ;*/
+    background:linear-gradient(#0e1461,#000000 ) no-repeat center center fixed ;
+    
+}
+.container {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .left {
+    /* background-color: #f1f1f1; */
+    padding: 10px;
+    flex: 50%;
+    position: relative;
+  }
+  
+  .right {
+    /* background-color: dodgerblue; */
+    padding: 10px;
+    flex: 50%;
+    text-align: left;
+    padding: 20px;
+  }
+  
+  /* Responsive layout - makes a one column-layout instead of two-column layout */
+  @media (max-width: 800px) {
+    .container {
+      flex-direction: column;
+    }
+
+    
+}
+
+
+p{
+    color: white;
+    font-family:Montserrat; 
+}
+
+/* #map{
+    filter: blur(4px);
+} */
+
+label b {
+    text-align: center;
+}
+
+
+input {
+    text-align: center;
+    width: 100%;
+}
+#submit{
+    text-align: center;
+    width: 100%;
+}
+h1  b input  #submit:hover { 
+    text-align: center;
+}
