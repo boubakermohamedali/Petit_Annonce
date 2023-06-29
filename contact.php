@@ -28,6 +28,8 @@
     <title>Contact| petit annonce</title>
     <link href="style.css" rel="stylesheet">
     <link href="login.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+
     <link id="codyframe" rel="stylesheet" href="style.css">
     <script defer src="contact.js"></script>
 

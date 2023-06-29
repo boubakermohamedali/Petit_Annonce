@@ -31,6 +31,7 @@
         <link rel="stylesheet" href="base.css" />
         <link rel="stylesheet" href="book.css" />
         <link rel="stylesheet" href="login.css" />
+        <link rel="stylesheet" href="index.css" />
         <link href="style.css" rel="stylesheet">
         <link id="codyframe" rel="stylesheet" href="style.css">
         <title>petit_annonce! - Contact</title>
@@ -61,15 +62,15 @@
   </div>
   <div class="center">
     <div class="coordonner">
-      <img src="./image/logo.png" alt="">
+      <img src="images/logo.png" alt="">
       <a href="">22 Avenue lamartine</a>
       <a href="">06000 Nice</a>
       <a href="">04 92 63 53 43</a>
     </div>
     <div class="reseau">
-      <a href="https://www.facebook.com/"><img src="./image/facebook.png" alt=""></a>
-        <a href="https://www.twitter.com"><img src="./image/twitter.png" alt=""></a>
-        <a href="https://www.instagram.com/"><img src="./image/insta.png" alt=""></a>
+      <a href="https://www.facebook.com/"><img src="images/facebook.png" alt=""></a>
+        <a href="https://www.twitter.com"><img src="images/twitter.png" alt=""></a>
+        <a href="https://www.instagram.com/"><img src="images/insta.png" alt=""></a>
     </div>
   </div>
   <div class="dons">

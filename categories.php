@@ -100,6 +100,7 @@ $categorie = getCategorie();
     <link rel="stylesheet" href="base.css" />
     <link rel="stylesheet" href="book.css" />
     <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="index.css" />
     <link href="style.css" rel="stylesheet">
     <link id="codyframe" rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

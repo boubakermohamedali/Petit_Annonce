@@ -134,6 +134,7 @@ $db=null;
     <link rel="stylesheet" href="book.css" />
     <link rel="stylesheet" href="login.css" />
     <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css" />
     <link id="codyframe" rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>document.getElementsByTagName("html")[0].className += " js";</script>
