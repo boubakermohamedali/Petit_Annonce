@@ -165,7 +165,7 @@ $db=null;
   </div>
   <div class="dons">
     <h5>Faites un don</h5>
-    <button class="btn">Dons</button>
+    <button class="btn"> <a href="PDF/COFFEE_SHOP.pdf" download="Annonces">Télécharger le produit en PDF</a></button>
   </div>
 </footer>
 <!-- /**** Footer fin ****/ -->
