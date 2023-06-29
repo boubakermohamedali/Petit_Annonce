@@ -176,6 +176,7 @@ $annonces = getAnnonces();
     <link rel="stylesheet" href="base.css" />
     <link rel="stylesheet" href="book.css" />
     <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="index.css" />
     <link href="style.css" rel="stylesheet">
     <link id="codyframe" rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -207,7 +208,7 @@ $annonces = getAnnonces();
   </div>
   <div class="dons">
     <h5>Faites un don</h5>
-    <button class="btn">Dons</button>
+    <button class="btn"> <a href="PDF/COFFEE_SHOP.pdf" download="Annonces">Télécharger le produit en PDF</a></button>
   </div>
 </footer>
 <!-- /**** Footer fin ****/ -->
