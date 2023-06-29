@@ -89,6 +89,7 @@ $categorie = getCategorie();
     <link rel="stylesheet" href="base.css" />
     <link rel="stylesheet" href="book.css" />
     <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="index.css" />
     <link href="style.css" rel="stylesheet">
     <link id="codyframe" rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -113,9 +114,9 @@ $categorie = getCategorie();
       <a href="">04 92 63 53 43</a>
     </div>
     <div class="reseau">
-      <a href="https://www.facebook.com/"><img src="./image/facebook.png" alt=""></a>
-        <a href="https://www.twitter.com"><img src="./image/twitter.png" alt=""></a>
-        <a href="https://www.instagram.com/"><img src="./image/insta.png" alt=""></a>
+      <a href="https://www.facebook.com/"><img src="images/facebook.png" alt=""></a>
+        <a href="https://www.twitter.com"><img src="images/twitter.png" alt=""></a>
+        <a href="https://www.instagram.com/"><img src="images/insta.png" alt=""></a>
     </div>
   </div>
   <div class="dons">
