@@ -101,11 +101,11 @@ $db=null;
                     <td><?= htmlentities($member['solde_cagnotte']) ?></td>  
                     <td><?= htmlentities($member['hash']) ?></td>
                     <td><?= htmlentities($member['token']) ?></td>
-                    <br>
+                    <br><br><br>
                         <div class='row'>
                             <div class='col'>
                                 <a class='btn btn-primary' href='member-form.php?id=<?= $member['id_membre'] ?>' role='button'>Modifier</a>
-                                <br><br><br><br>
+                                <br><br>
                                 <a class='btn btn-danger' href='delete-member.php?id=<?= $member['id_membre'] ?>' role='button'>Supprimer</a><br>
                             </div>
                         </div>
