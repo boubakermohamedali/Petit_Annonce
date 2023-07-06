@@ -7,7 +7,7 @@
     <div class='jumbotron bg-light m-2 p-2'>
         <h1 class='display-4'>Bienvenue au petit annonce!</h1>
         <header>
-          <a href="index.php"><img src="../image/logo.png" alt="petit_annonce!"></a>
+          <a href="index.php"><img src="images/pinterest.png" alt="petit_annonce!"></a>
         </header>
         <p class='lead'>Ici vous pouvez gérer les abonnement pour le très exclusif petit annonce !</p>
         <hr class='my-4'>
