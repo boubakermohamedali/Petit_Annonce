@@ -30,9 +30,7 @@ function getAnnonce() {
         $db = connect();
 
         // Requête pour récupérer tous les annonces
-        $annonceQuery=$db->query('SELECT * FROM categories');
         $annonceQuery=$db->query('SELECT * FROM annonces');
-        $annonceQuery=$db->query('SELECT * FROM membres');
 
         // Renvoie tous les lignes
         return $annonceQuery->fetchAll(PDO::FETCH_ASSOC);
@@ -48,8 +46,6 @@ function getMembre () {
       $db = connect();
 
       // Requête pour récupérer tous les membres
-      $membreQuery=$db->query('SELECT * FROM categories');
-      $membreQuery=$db->query('SELECT * FROM annonces');
       $membreQuery=$db->query('SELECT * FROM membres');
 
       // Renvoie tous les lignes
