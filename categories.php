@@ -51,7 +51,6 @@ $categorie = getCategorie();
         <a href='annonces.php' class='btn btn-secondary m-2 active' role='button'>Annonces</a>
         <a href='categorie.php' class='btn btn-secondary m-2 active' role='button'>Categories</a>
         <a href='members.php' class='btn btn-secondary m-2 active' role='button'>Membres</a>
-        <a href='utilisateurs.php' class='btn btn-secondary m-2 active' role='button'>Utilisateurs</a>
         <a href='login.php' class='btn btn-secondary m-2 active' role='button'>Contacts</a>
         </p>
     </div>
