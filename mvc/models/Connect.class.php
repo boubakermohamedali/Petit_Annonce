@@ -67,12 +67,12 @@ function getusers(){
 }
 
 //Extraction des données d user par ID
-function chargerUserById($id_utilisateur){
+function chargerUserById($id_user){
     try {
           //$db = connect();
         global $db;
         $query=$db->prepare('SELECT * FROM '. $this->table. ' WHERE id= :id');
-        $query->execute(['id'=>$id_utilisateur]);
+        $query->execute(['id'=>$id_user]);
         if ($query->rowCount()){
             // Renvoie toutes les infos de l'utilisateur
             
