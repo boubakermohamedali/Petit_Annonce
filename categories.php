@@ -14,18 +14,18 @@ if (isset($_GET['id_categorie'])) {
         $db = connect();
 
         // Préparer $aboQuery pour récupérer les informations de l'abo
-        $aboQuery = $db->prepare('SELECT * FROM categories WHERE id_categorie= id_categorie');
+        $categorieQuery = $db->prepare('SELECT * FROM categories WHERE id_categorie= id_categorie');
         // Exécuter la requête
-        $aboQuery->execute(['id_categorie' => $id_categorie]);
+        $categorieQuery->execute(['id_categorie' => $id_categorie]);
         // Récupérer les données et les assigner à $abo
-        $abo = $aboQuery->fetch(PDO::FETCH_ASSOC);
+        $categorie = $categorieQuery->fetch(PDO::FETCH_ASSOC);
     } catch (Exception $e) {
         // Afficher le message s'il y a une exception
         echo $e->getMessage();
     }
 
     // Fermer la connection à la BDD
-    $aboQuery=null;
+    $categorieQuery=null;
     $db=null;
 }
 

@@ -13,19 +13,20 @@ if (isset($_GET['id_annonce'])) {
         // Se connecter à la BDD avec la fonction connect() définie dans functions.php
         $db = connect();
 
-        // Préparer $aboQuery pour récupérer les informations de l'abo
-        $aboQuery = $db->prepare('SELECT * FROM annonces WHERE id_annonce= id_annonce');
+        // Préparer $annonceQuery pour récupérer les informations de l'abo
+        $annonceQuery = $db->prepare('SELECT * FROM annonces WHERE id_annonce= id_annonce');
         // Exécuter la requête
-        $aboQuery->execute(['id_annonce' => $id_annonce]);
+        $annonceQuery->execute(['id_annonce' => $id_annonce]);
         // Récupérer les données et les assigner à $abo
-        $abo = $aboQuery->fetch(PDO::FETCH_ASSOC);
+        $annoces = $annonceQuery->fetch(PDO::FETCH_ASSOC);
+        $result = $query->get_result();
     } catch (Exception $e) {
         // Afficher le message s'il y a une exception
         echo $e->getMessage();
     }
 
     // Fermer la connection à la BDD
-    $aboQuery=null;
+    $annonceQuery=null;
     $db=null;
 }
 

@@ -74,26 +74,26 @@ try {
             </tr>
         </thead>
         <tbody>
-            <?php foreach ($annonces as $abo) : ?>
+            <?php foreach ($annonces as $annonce) : ?>
                 <tr>
                     <td><?= $abo['id_annonce'] ?></td>
-                    <td><?= htmlentities($abo['Titre']) ?></td>
-                    <td><?= $abo['Prix_vente'] ?></td>
-                    <td><?= $abo['Date_vente'] ?></td>
-                    <td><?= $abo['cont_annonce'] ?></td>
-                    <td><?= $abo['Date_validation'] ?></td>
-                    <td><?= $abo['description_annonces'] ?></td>
-                    <td><?= $abo['date_creation'] ?></td>
-                    <td><?= $abo['description_annonces'] ?></td>
-                    <td><?= $abo['duree_publication'] ?></td>
-                    <td><?= $abo['date_fin_publication'] ?></td>
-                    <td><?= $abo['id_membre'] ?></td>
-                    <td><?= $abo['id_etat'] ?></td>
-                    <td><?= $abo['id_membre_1'] ?></td>
-                    <td><?= $abo['date_creation'] ?></td>
+                    <td><?= htmlentities($annonce['Titre']) ?></td>
+                    <td><?= $annonce['Prix_vente'] ?></td>
+                    <td><?= $annonce['Date_vente'] ?></td>
+                    <td><?= $annonce['cont_annonce'] ?></td>
+                    <td><?= $annonce['Date_validation'] ?></td>
+                    <td><?= $annonce['description_annonces'] ?></td>
+                    <td><?= $annonce['date_creation'] ?></td>
+                    <td><?= $annonce['description_annonces'] ?></td>
+                    <td><?= $annonce['duree_publication'] ?></td>
+                    <td><?= $annonce['date_fin_publication'] ?></td>
+                    <td><?= $annonce['id_membre'] ?></td>
+                    <td><?= $annonce['id_etat'] ?></td>
+                    <td><?= $annonce['id_membre_1'] ?></td>
+                    <td><?= $annonce['date_creation'] ?></td>
                     <td>
-                        <a class='btn btn-primary' href='annonce-form.php?id=<?= $abo['id_annonce'] ?>' role='button'>Modifier</a>
-                        <a class='btn btn-danger' href='delete-annonce.php?id=<?= $abo['id_annonce'] ?>' role='button'>Supprimer</a>
+                        <a class='btn btn-primary' href='annonce-form.php?id=<?= $annonce['id_annonce'] ?>' role='button'>Modifier</a>
+                        <a class='btn btn-danger' href='delete-annonce.php?id=<?= $annonce['id_annonce'] ?>' role='button'>Supprimer</a>
                     </td>
                 </tr>
             <?php endforeach; ?>

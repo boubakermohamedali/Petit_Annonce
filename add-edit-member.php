@@ -77,9 +77,10 @@ if (!empty($_POST)) {
     $createMemberStmt = null;
     $updateMemberStmt = null;
     $db = null;
+ 
+   
 
     // Redirection vers la page principale des membres en passant le message et son type en variables GET
     header('location:' . 'membres.php?type=' . $type . '&message=' . $message);
 }
 
-?>

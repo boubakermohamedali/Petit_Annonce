@@ -1,4 +1,4 @@
-<?php require_once("connexions.php");
+<?php require_once("connexion.php");
 require_once 'header.php';
 session_unset();
 session_destroy();
