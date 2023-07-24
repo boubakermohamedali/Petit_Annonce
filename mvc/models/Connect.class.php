@@ -1,5 +1,49 @@
 <?php
-class UserModel{
+class DB
+{
+
+    // à compléter avec les infos de votre base de données
+    private const HOST = 'localhost';
+    private const DB = 'bateau_pirate';
+    private const USER = 'root';
+    private const PWD = '';
+
+    /* singleton */
+    private $database; //on le met en static pour qu'il soit partagé avec toutes les instances des
+    // classes qui heriteront de la class Model (classes filles de Model)
+
+    /**
+     * Cette fonction sera appellée par getDatabase() la premiere fois pour
+     * initialiser la connexion avec la base de données
+     */
+    private function initDatabase(){
+            $this->database = new PDO('mysql:host='. self::HOST . ';dbname='. self::DB,
+                self::USER,
+                self::PWD,
+                [PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8']
+            );
+            //gestion des erreurs
+            $this->database->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
+
+      
+    }
+
+    //design pattern singleton
+     function getDatabase()
+    {
+        // la premiere fois on initialise self::$database
+        if ($this->database === null) {
+            $this->initDatabase();
+        }
+        // et on renvoie l'objet qui sert à effectuer les requêtes
+        return $this->database;
+    }
+
+}
+
+$database = new DB();
+$db = $database->getDatabase();
+class ConnectModel{
 
     private $table = 'membres';
     private $table_photo= 'photo';
@@ -100,7 +144,7 @@ function getUsernames($username) {
 
 //Connexion d'un user déjà enregistré à son compte
 function logUser() {
-$UserModel=new UserModel();
+$UserModel=new ConnectModel();
 $email=filter_var($_POST["email"],FILTER_VALIDATE_EMAIL);
 //print_r($email);
 $user=$UserModel->getUserByEmail($email);
@@ -159,9 +203,9 @@ function ActivationUserByMail($pwd,$email,$username,$token){
 
 //Changer le mot de passe d user s'il l'a oublié
 function mailChangePwd(){
- $UserModel=new UserModel();
+ $ConnectModel=new ConnectModel();
 if(!empty($_POST["email"])&& filter_var($_POST["email"],FILTER_VALIDATE_EMAIL)){
-    if($UserModel->getUserByEmail($_POST["email"])){
+    if($ConnectModel->getUserByEmail($_POST["email"])){
         $email=htmlentities($_POST["email"]);
         //var_dump($email);
        $token=bin2hex(random_bytes(16));
@@ -219,7 +263,7 @@ try {
 }    
 
 function activUser(){
- $UserModel=new UserModel();
+ $UserModel=new ConnectModel();
  $token=htmlspecialchars($_GET['t']);
  $user= $UserModel->getUserByToken($token);
  //print_r($user);
