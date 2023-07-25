@@ -44,8 +44,8 @@
 	<div class="m-4">
 		<div class="from-group">
 			<from action="pdf.php" methode="POST">
-				<imput type="Test" name="cafe" aria-placeholder="votre cafe" class="form-control"/><br/>
-				<button type="submit" class="btn btn-primary">Envoyer</button>
+				<imput type="Test" name="petit_annonce" aria-placeholder="votre petit_annonce" class="form-control"/><br/>
+				<button type="submit" class="btn btn-primary">PDF</button>
 			</from>
 		</div>
 	</div>
