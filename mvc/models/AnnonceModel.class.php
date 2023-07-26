@@ -328,7 +328,7 @@ $membre=new Membre();
     //$db = connect();
       global $db;
     $query=$db->prepare('SELECT id_Membre FROM '.$this->table_membres.' WHERE id=:id');
-    $query->execute(['id'=>$id_membre]);
+    $query->execute(['id_membre'=>$id_membre]);
     $result = $query->fetch();
     $result=$membre->membres($result['id_membre']);
     return $result;
@@ -499,7 +499,7 @@ public function adminModifierAnnoncebyIdAnnonce($idAnnonce,$Statut_annonce_valid
 public function RecupererEmailUserbyIdAnnonce($idAnnonce){
   try {
         global $db;
-        $query=$db->prepare('SELECT email FROM '. $this->table_membres .' AS u INNER JOIN '. $this->tableannonces .' AS a ON a.idMembre=u.id WHERE a.id=:id');
+        $query=$db->prepare('SELECT email .FROM '. $this->table_membres .' AS u INNER JOIN '. $this->tableannonces .' AS a ON a.idMembre=u.id WHERE a.id=:id');
         $query->execute(['id'=>$idAnnonce]);
         if ($query->rowCount()){
             // Renvoie toutes les infos de l'annonce
