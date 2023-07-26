@@ -261,7 +261,7 @@ try{
     //$db = connect();
       global $db;
     $query=$db->prepare('INSERT INTO   '.$this->table_photo.' (id_annonce,fichier_chemin, is_main_photo) VALUES (:id_annonce,:fichier_chemin,:is_main_photo)');
-    $query->execute(['id_annonce'=>$id_annonce,'fichier_chemin'=>$fichier_chemin, 'is_main_photo'=>$is_main_photo]); 
+    $query->execute(['idphoto'=>$id_photo,'fichier_chemin'=>$fichier_chemin, 'is_main_photo'=>$is_main_photo]); 
     
 } catch (Exception $e) {
   echo $e->getMessage();
@@ -304,15 +304,15 @@ public function MontrerCheminPhoto($id_annonce){
 
 }
   
-public function getCategorie($id_annonce){
+public function getCategorie($id_categorie){
 try{
-$annonce=new Annonces();
+$categorie=new Categorie();
     //$db = connect();
       global $db;
     $query=$db->prepare('SELECT id_Categorie FROM '.$this->table_categories.' WHERE id=:id');
-    $query->execute(['id'=>$id_annonce]);
+    $query->execute(['id'=>$id_categorie]);
     $result = $query->fetch();
-    $result=$annonce->categories($result['id_Categorie']);
+    $result=$categorie->categories($result['id_Categorie']);
     return $result;
     
 } catch (Exception $e) {
@@ -322,15 +322,15 @@ $annonce=new Annonces();
 
 }
 
-public function getIdMembre($id_annonce){
+public function getIdMembre($id_membre){
 try{
-$annonce=new Annonces();
+$membre=new Membre();
     //$db = connect();
       global $db;
     $query=$db->prepare('SELECT id_Membre FROM '.$this->table_membres.' WHERE id=:id');
-    $query->execute(['id'=>$id_annonce]);
+    $query->execute(['id'=>$id_membre]);
     $result = $query->fetch();
-    $result=$annonce->categories($result['idMembre']);
+    $result=$membre->membres($result['id_membre']);
     return $result;
     
 } catch (Exception $e) {
