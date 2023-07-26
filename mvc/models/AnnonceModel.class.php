@@ -261,7 +261,7 @@ try{
     //$db = connect();
       global $db;
     $query=$db->prepare('INSERT INTO   '.$this->table_photo.' (id_annonce,fichier_chemin, is_main_photo) VALUES (:id_annonce,:fichier_chemin,:is_main_photo)');
-    $query->execute(['idphoto'=>$id_photo,'fichier_chemin'=>$fichier_chemin, 'is_main_photo'=>$is_main_photo]); 
+    $query->execute(['idphoto'=>$idAnnonce,'fichier_chemin'=>$fichier_chemin, 'is_main_photo'=>$is_main_photo]); 
     
 } catch (Exception $e) {
   echo $e->getMessage();
