@@ -530,18 +530,6 @@ public function getidMembrebyIDAnnonce($idannonce){
 
 }
 }
-
-namespace App\Tests\Entity;
-use App\Entity\Product;
-use PHPUnit\Framework\TestCase;
-class ProductTest extends TestCase
-{
-    // …
-    public function testComputeTVAOtherProduct()
-    {
-          $product = new Product('Un autre produit', 'Un autre type de produit', 20);
-        $this->assertSame(3.92, $product->computeTVA());
-    }
-}
+?>
 
   
