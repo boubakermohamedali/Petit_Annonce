@@ -26,10 +26,10 @@ class WelcomeController
                 </style>
             </head>
             <body>
-                <p>Mon nom est John Doe 👋</p>
-                <p>Je suis développeur web freelance 💻</p>
-                <p>Maîtrise totale de HTML et CSS ❤️</p>
-                <p>A fond sur JavaScript 👟</p>
+                <p>Petit annonce 👋</p>
+                <p>Ce site representer la meilleur produit cosmatique en ligne 💻</p>
+                <p>commandez-vous nos produit❤️</p>
+                <p>A fond sur les meilleurs marques 👟</p>
             </body>
         </html>
         <?php
@@ -44,21 +44,21 @@ class WelcomeController
     }
 
     /** fonction appelée par la route /elements */
-    public function elements()
+    public function annonce()
     {
-        require_once "views/elements.php";
+        require_once "views/annonce.php";
     }
 
     /** fonction appelée par la route /generic */
-    public function generic()
+    public function utilisateur()
     {
-        require_once "views/generic.php";
+        require_once "views/utilisateur.php";
     }
 
     /** fonction appelée par la route /generic (vues fragmentées) */
-    public function generic2()
+    public function categorie()
     {
-        require_once "views/generic_fragmented.php";
+        require_once "views/categorie.php";
     }
 
     /** fonction appelée par la route /testjson */
