@@ -1,5 +1,5 @@
 
-
+<?php 
 require_once "models/UsersManager.class.php";
 
 
@@ -23,3 +23,4 @@ class UsersController
         require_once "views/users.php";
     }
 }
+?>
