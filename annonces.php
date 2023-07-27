@@ -76,14 +76,12 @@ try {
         <tbody>
             <?php foreach ($annonces as $annonce) : ?>
                 <tr>
-                    <td><?= $abo['id_annonce'] ?></td>
+                    <td><?= $annonce['id_annonce'] ?></td>
                     <td><?= htmlentities($annonce['Titre']) ?></td>
                     <td><?= $annonce['Prix_vente'] ?></td>
-                    <td><?= $annonce['Date_vente'] ?></td>
+                    <td><?= $annonce['date_vente'] ?></td>
                     <td><?= $annonce['cont_annonce'] ?></td>
                     <td><?= $annonce['Date_validation'] ?></td>
-                    <td><?= $annonce['description_annonces'] ?></td>
-                    <td><?= $annonce['date_creation'] ?></td>
                     <td><?= $annonce['description_annonces'] ?></td>
                     <td><?= $annonce['duree_publication'] ?></td>
                     <td><?= $annonce['date_fin_publication'] ?></td>
